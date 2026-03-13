@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dopple Gaming Mouse - Precision Redefined</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h1>Dopple</h1>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+            <div class="loading-text">Initializing...</div>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Dopple</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#why-choose">Why Choose</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#gallery">Showcase</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2 class="animate-text">Dopple Gaming Mouse</h2>
+            <p class="animate-text-delay">Experience unparalleled precision and performance in gaming.</p>
+            <div class="hero-buttons">
+                <a href="#features" class="cta-button primary">Explore Features</a>
+                <a href="#" class="cta-button secondary">Watch Demo</a>
+            </div>
+        </div>
+        <div class="hero-video">
+            <div id="mouse-3d" class="hero-3d" aria-label="Interactive 3D model of Dopple Gaming Mouse">
+                <div class="video-fallback">
+                    <img class="fallback-img" src="images/mouse1.jpg" alt="Dopple Gaming Mouse Preview" loading="lazy">
+                    <div class="skeleton skeleton-video"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Revolutionary Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item" data-aos="fade-up">
+                <div class="feature-icon">🎯</div>
+                <h3>Ultra-Precision Sensor</h3>
+                <p>16000 DPI optical sensor for pixel-perfect accuracy in every game.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">🌈</div>
+                <h3>RGB Lighting</h3>
+                <p>16.8 million colors with customizable patterns and effects.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>1ms response time and 1000Hz polling rate for zero lag.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">🔋</div>
+                <h3>Long Battery Life</h3>
+                <p>Up to 70 hours of continuous gaming on a single charge.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">🎮</div>
+                <h3>Programmable Buttons</h3>
+                <p>11 programmable buttons with macro support for complex commands.</p>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">🛡️</div>
+                <h3>Ergonomic Design</h3>
+                <p>Designed for comfort during long gaming sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose" class="why-choose">
+        <h2>Why Choose Dopple?</h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon">🏆</div>
+                <h3>Proven Performance</h3>
+                <p>Trusted by professional gamers and esports athletes worldwide for its reliability and precision.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">🔧</div>
+                <h3>Advanced Customization</h3>
+                <p>Fine-tune every aspect of your mouse with our comprehensive software suite and hardware switches.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">💎</div>
+                <h3>Premium Build Quality</h3>
+                <p>Crafted with aerospace-grade materials for durability and a premium feel in every click.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">🚀</div>
+                <h3>Future-Proof Technology</h3>
+                <p>Regular firmware updates and compatibility with the latest gaming platforms keep you ahead.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="specs" class="specs">
+        <div class="specs-container">
+            <div class="specs-content">
+                <h2>Technical Specifications</h2>
+                <div class="spec-list">
+                    <div class="spec-item">
+                        <span class="spec-label">Sensor:</span>
+                        <span class="spec-value">PixArt PMW3389</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">DPI Range:</span>
+                        <span class="spec-value">100 - 16000</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Polling Rate:</span>
+                        <span class="spec-value">1000Hz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Buttons:</span>
+                        <span class="spec-value">11 Programmable</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Battery:</span>
+                        <span class="spec-value">70 Hours</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Weight:</span>
+                        <span class="spec-value">87g</span>
+                    </div>
+                </div>
+            </div>
+            <div class="specs-image">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dopple Gaming Mouse" class="animate-float">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Product Showcase</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/mouse1.jpg" alt="Dopple Gaming Mouse - Close Up" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/mouse2.jpg" alt="Dopple Gaming Mouse - RGB Lighting" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/mouse3.jpg" alt="Dopple Gaming Mouse - Side Profile" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <p>"Precision is on another level. I never knew a mouse could feel this natural — the grip fits perfectly and the sensor tracking is flawless. Plus the RGB effects really tie my setup together."</p>
+                <div class="review-author">- Alex Chen, Pro Gamer</div>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★☆</div>
+                <p>"Loved the comfort for marathon streams. The software took a few minutes to learn but once I had my profile dialed, the responsiveness was amazing."</p>
+                <div class="review-author">- Sarah Johnson, Casual Gamer</div>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <p>"Feels solid and keeps up with every flick shot. The side grips are a game changer and the button mapping is super flexible. Absolutely my new daily driver."</p>
+                <div class="review-author">- Mike Rodriguez, Esports Enthusiast</div>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <p>"Long sessions are effortless now. The battery lasts forever, and the small weight makes it easy to micro-adjust without fatigue."</p>
+                <div class="review-author">- Jordan Lee, Competitive Player</div>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★☆</div>
+                <p>"Great value for what you get. A couple more preset profiles in the software would be nice, but the hardware itself is worth every penny."</p>
+                <div class="review-author">- Priya K., Streamer</div>
+            </div>
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <p>"Incredible build quality, and the lighting looks insane on dark backgrounds. I’m already showing it off in my stream overlays."</p>
+                <div class="review-author">- Daniel V., Tech Enthusiast</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Is the Dopple mouse compatible with my gaming setup?</div>
+                <div class="faq-answer">Yes. Dopple connects via USB-C and works seamlessly with Windows, macOS, and Linux. It is plug-and-play for most systems, and our optional config software runs on all major platforms.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How long does the battery last?</div>
+                <div class="faq-answer">You can expect about 70 hours with full RGB on. If you switch to eco mode or disable lighting, the battery can last over 150 hours on a single charge.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I customize the RGB lighting?</div>
+                <div class="faq-answer">Yes — our companion software gives you full control over colors, effects, and profiles. You can save presets, sync lighting across devices, and even set lighting to respond to game audio.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is the warranty and support like?</div>
+                <div class="faq-answer">Dopple includes a 2-year limited warranty covering manufacturing defects and hardware failures. If you need help, our support team provides live chat and email support 24/7.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What accessories are included?</div>
+                <div class="faq-answer">Each kit includes a braided USB-C cable, 4 sets of replacement PTFE glide feet, and a padded carrying pouch. Extra weights and grips are available as optional add-ons.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Elevate Your Game?</h2>
+            <p>Experience precision gaming with the Dopple Gaming Mouse.</p>
+            <a href="#" class="cta-button primary large">Buy Now - $129.99</a>
+        </div>
+        <div class="cta-bg">
+            <div class="floating-elements">
+                <div class="floating-element delay-0">🎯</div>
+                <div class="floating-element delay-1">⚡</div>
+                <div class="floating-element delay-2">🏆</div>
+                <div class="floating-element delay-3">🎮</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Dopple</h3>
+                <p>Precision gaming peripherals for the competitive edge.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Discord</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">YouTube</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Email: support@dopple.com</p>
+                <p>Live Chat: 24/7</p>
+            </div>
+            <div class="footer-section">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button secondary small">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dopple Gaming. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

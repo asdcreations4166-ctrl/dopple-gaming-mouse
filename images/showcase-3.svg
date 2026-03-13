@@ -1,0 +1,19 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f1a"/>
+      <stop offset="100%" stop-color="#150e2a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <path d="M200,550 C400,450 800,650 1000,520" stroke="#75d1ff" stroke-width="16" fill="none" stroke-linecap="round" filter="url(#glow)"/>
+  <text x="50%" y="42%" text-anchor="middle" fill="#8ef1ff" font-family="Segoe UI, system-ui, sans-serif" font-size="58" font-weight="700">Showcase Image 3</text>
+  <text x="50%" y="56%" text-anchor="middle" fill="#c8f3ff" font-family="Segoe UI, system-ui, sans-serif" font-size="22" opacity="0.85">(Drop your high-res mouse shot in here)</text>
+</svg>
