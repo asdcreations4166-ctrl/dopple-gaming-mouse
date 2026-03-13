@@ -1244,10 +1244,15 @@ footer {
         flex-direction: column;
         padding: 1rem;
         align-items: flex-start;
+        position: relative;
     }
 
     .nav-toggle {
         display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 1200;
     }
 
     .nav-links {
@@ -1257,9 +1262,14 @@ footer {
         margin-top: 1rem;
         padding: 1rem;
         gap: 0.5rem;
-        background: rgba(10, 10, 20, 0.85);
+        background: rgba(10, 10, 20, 0.95);
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.12);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
     }
 
     .nav-links.active {
